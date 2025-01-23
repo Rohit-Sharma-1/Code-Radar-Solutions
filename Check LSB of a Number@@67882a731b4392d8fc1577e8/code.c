@@ -3,7 +3,8 @@
 int main() {
     int num;
     scanf("%d",&num);
-    if(~num[0]==0){
+    nums =  
+    if(NUM & 1){
         printf("Set");
     }else{
         printf("Not Set");
