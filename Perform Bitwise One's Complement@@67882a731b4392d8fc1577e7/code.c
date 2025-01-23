@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2;
-    scanf("%d %d",&num1, &num2);
+    int num1;
+    scanf("%d",&num1);
     int res;
-    res = num1~num2;
+    res = ~num1;
     printf("%d",res);
     return 0;
 }
