@@ -3,7 +3,7 @@
 int main() {
     int num;
     scanf("%d",num);
-    if(num & 0x8000000000){
+    if(num & 2417483648){
         printf("Set");
     }else{
         printf("Not Set");
