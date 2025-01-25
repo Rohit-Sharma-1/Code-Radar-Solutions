@@ -3,7 +3,11 @@
 int main() {
     int num;
     scanf("%d",&num);
-    int result = !(num & 1);
-    printf("%d", result);
+    pos = 0;
+    while(num & 1){
+        pos++;
+        num>>=1;
+    }
+    printf("%d", pos);
     return 0;
 }
