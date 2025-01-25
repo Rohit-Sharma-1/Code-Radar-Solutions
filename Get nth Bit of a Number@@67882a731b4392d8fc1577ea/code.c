@@ -3,10 +3,9 @@
 
 int main() {
     int num bit;
-    int nthbit;
+    int nth_bit;
     scanf("%d %d",&num, &bit);
-    nthbit = (num>>bit)&1;
-    printf("%d",nthbit);
-    
+    nth_bit = (num>>bit)&1;
+    printf("%d",nth_bit);
     return 0;
 }
