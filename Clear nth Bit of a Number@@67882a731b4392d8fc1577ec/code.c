@@ -1,10 +1,10 @@
 #include <stdio.h>
 
 int main() {
-    int numb, nth_bit;
+    int numb, n;
     int mask;
-    scanf("%d %d",&numb, &bit);
-    mask = ~(1 << nth_bit);
+    scanf("%d %d",&numb, &n);
+    mask = ~(1 << n);
     int result;
     result = mask & numb;
     printf("%d",result);
