@@ -11,5 +11,6 @@ int main() {
     }else{
         result = mask2&numb;
     }
+    printf("%d",result);
     return 0;
 }
