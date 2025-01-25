@@ -4,7 +4,7 @@ int main() {
     int num;
     scanf("%d",&num);
     int count;
-    while(!(num & 0x8000000000)){
+    while(!(num & 1)){
         count++;
         num>>=1;
     }
