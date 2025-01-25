@@ -5,7 +5,7 @@ int main() {
     char str[50];
     scanf("%d %d",&num, &bit);
     sprintf(str, "%d", num);
-    numlen = strlen(num);
+    numlen = (int)strlen(num);
     printf("%d",numlen);
     return 0;
 }
