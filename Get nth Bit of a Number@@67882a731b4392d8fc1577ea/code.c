@@ -3,11 +3,10 @@
 
 int main() {
     int num bit;
-    char str[50];
+    int nthbit;
     scanf("%d %d",&num, &bit);
-    sprintf(str, "%d", num);
-    int numlen;
-    numlen = strlen(num);
-    printf("%d",numlen);
+    nthbit = (num>>bit)&1;
+    printf("%d",nthbit);
+    
     return 0;
 }
