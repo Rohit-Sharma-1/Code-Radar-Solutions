@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 int main() {
-    int numb is_prime = 1;
+    int numb, is_prime = 1;
     scanf("%d",&numb);
     
     for(int i=2;i<numb;i++){
