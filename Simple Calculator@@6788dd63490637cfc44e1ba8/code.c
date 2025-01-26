@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int num1, num2, add, minus, prod, div;
+    float num1, num2, add, minus, prod, div;
     char ch;
     scanf("%d %d %c",&num1, &num2, &ch);
     add = num1+num2;
@@ -9,13 +9,13 @@ int main() {
     prod = num1*num2;
     div = num1/num2;
     if(ch=='+'){
-        printf("%d",add);
+        printf("%f",add);
     }else if(ch=='-'){
-        printf("%d",minus);
+        printf("%f",minus);
     }else if(ch=='*'){
-        printf("%d",prod);
+        printf("%f",prod);
     }else if(ch=='/'){
-        printf("%d",div);
+        printf("%f",div);
     }
     return 0;
 }
