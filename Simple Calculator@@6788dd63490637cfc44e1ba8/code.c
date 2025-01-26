@@ -2,7 +2,7 @@
 
 int main() {
     float num1, num2; 
-    int div, prod, add, minus;
+    float div, prod, add, minus;
     char ch;
     scanf("%d %d %c",&num1, &num2, &ch);
     add = num1+num2;
