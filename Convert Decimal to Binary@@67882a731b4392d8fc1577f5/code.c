@@ -5,7 +5,7 @@ int main() {
     int i = 0;
     int num;
     scanf("%d",&num);
-    while(num>0){
+    while(num>1){
         binarynum[i] = num%2;
         num = num/2;
         i++;
