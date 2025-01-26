@@ -12,5 +12,6 @@ int main() {
     for(int j=i-1; j>=0; j--;){
         printf("%d", binarynum[j]);
     }
+    printf("\n")
     return 0;
 }
