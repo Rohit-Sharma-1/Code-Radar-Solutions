@@ -4,7 +4,7 @@
 int main() {
     char ch;
     scanf("%c",&ch);
-    if(ch>='0' && ch<='9'){
+    if(isdigit(ch)){
         printf("Digit");
     }else if(isalpha(ch)){
         char lower_ch = tolower(ch);
@@ -14,7 +14,7 @@ int main() {
             printf("Consonant");
         } 
     }else{
-        printf("special Character");
+        printf("specialCharacter");
     }
     return 0;
 }
