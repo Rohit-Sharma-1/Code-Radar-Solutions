@@ -6,8 +6,8 @@ int main() {
     int num;
     scanf("%d",&num);
     while(num>0){
-        binarynum[i] = n%2;
-        n = n/2;
+        binarynum[i] = num%2;
+        num = num/2;
         i++;
     }
     for(int j=i-1; j>=0; j--){
