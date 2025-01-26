@@ -4,7 +4,7 @@ int main() {
     float num1, num2; 
     int div, prod, add, minus;
     char ch;
-    scanf("%d %d %c",&num1, &num2, &ch);
+    scanf("%f %f %c",&num1, &num2, &ch);
     add = num1+num2;
     minus = num1-num2;
     prod = num1*num2;
