@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    int cp sp;
-    scanf("%d %d",&cp, &sp);
-    if(cp>sp){
+    int costp sellp;
+    scanf("%d %d",&costp, &sellp);
+    if(costp>sellp){
         printf("Loss");
-    }else if(sp>cp){
+    }else if(sellp>costp){
         printf("Profit");
     }else{
         printf("No Profit No Loss");
