@@ -18,7 +18,7 @@ int main() {
     }else if(ch=='/'){
         printf("%d",(int)div);
     }else{
-        printf("Error");
+        printf("error");
     }
     return 0;
 }
