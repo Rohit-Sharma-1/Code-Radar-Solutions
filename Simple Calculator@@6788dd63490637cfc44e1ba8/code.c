@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 int main() {
-    float num1, num2, minus; 
-    int div, prod, add;
+    float num1, num2; 
+    int div, prod, add, minus;
     char ch;
     scanf("%d %d %c",&num1, &num2, &ch);
-    add = (int)num1+(int)num2;
+    add = num1+num2;
     minus = num1-num2;
     prod = num1*num2;
     div = num1/num2;
@@ -17,6 +17,8 @@ int main() {
         printf("%d",(int)prod);
     }else if(ch=='/'){
         printf("%d",(int)div);
+    }else{
+        printf("Error");
     }
     return 0;
 }
