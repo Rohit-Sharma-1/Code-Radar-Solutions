@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main() {
-    int costp sellp;
+    int costp,sellp;
     scanf("%d %d",&costp, &sellp);
     if(costp>sellp){
         printf("Loss");
