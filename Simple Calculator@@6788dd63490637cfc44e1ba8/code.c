@@ -10,7 +10,7 @@ int main() {
     prod = num1*num2;
     div = num1/num2;
     if(ch=='+'){
-        printf("%d",(int)add);
+        printf("%f",(int)add);
     }else if(ch=='-'){
         printf("%d",(int)minus);
     }else if(ch=='*'){
