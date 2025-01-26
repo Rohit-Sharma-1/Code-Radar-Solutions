@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 int main() {
-    float num1, num2; 
-    float div, prod, add, minus;
+    int num1, num2; 
+    int div, prod, add, minus;
     char ch;
     scanf("%d %d %c",&num1, &num2, &ch);
     add = num1+num2;
