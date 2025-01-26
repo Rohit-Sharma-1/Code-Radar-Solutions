@@ -5,12 +5,12 @@ int main() {
     int div, prod, add;
     char ch;
     scanf("%d %d %c",&num1, &num2, &ch);
-    add = num1+num2;
+    add = (int)num1+(int)num2;
     minus = num1-num2;
     prod = num1*num2;
     div = num1/num2;
     if(ch=='+'){
-        printf("%f",(int)add);
+        printf("%d",(int)add);
     }else if(ch=='-'){
         printf("%d",(int)minus);
     }else if(ch=='*'){
