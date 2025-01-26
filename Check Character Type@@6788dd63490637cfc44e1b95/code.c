@@ -4,7 +4,7 @@
 int main() {
     char ch;
     scanf("%c",&ch);
-    if(isdigit(ch)){
+    if(ch>='0'&&ch<='9'){
         printf("Digit");
     }else if(isalpha(ch)){
         char lower_ch = tolower(ch);
