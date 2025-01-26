@@ -2,7 +2,8 @@
 
 int main() {
     int binarynum[32];
-    int num, i=0;
+    int num;
+    int i=0;
     scanf("%d",&num);
     while(num>0){
         binarynum[i] = n%2;
