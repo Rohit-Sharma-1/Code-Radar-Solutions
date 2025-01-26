@@ -3,9 +3,8 @@
 int main() {
     int numb, bit;
     scanf("%d %d",&numb, &bit);
-    int mask = numb>>bit;
-    int result = mask | 1;
-    int res = result<<bit;
-    printf("%d",res);
+    int mask = 1<<bit;
+    int result = mask | numb;
+    printf("%d",result);
     return 0;
 }
