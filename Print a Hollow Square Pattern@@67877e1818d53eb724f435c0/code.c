@@ -8,11 +8,13 @@ int main() {
             for(int j=1;j<=n; j++){
                 printf("*");
             }
-        }else{
-            for(int j=1; j<=n; j++){
-                printf("*"+" "+"*");
+        }
+        for(int j=1; j<=n; j++){
+            if(int k==1||k==n){
+                printf("*");
             }
         }
+        
     }
     return 0;
 }
