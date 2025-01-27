@@ -10,13 +10,13 @@ int main() {
     prod = num1*num2;
     div = num1/num2;
     if(ch=='+'){
-        printf("%d",(int)add);
+        printf("%d",add);
     }else if(ch=='-'){
-        printf("%d",(int)minus);
+        printf("%d",minus);
     }else if(ch=='*'){
-        printf("%d",(int)prod);
+        printf("%d",prod);
     }else if(ch=='/'){
-        printf("%d",(int)div);
+        printf("%d",div);
     }else{
         printf("error");
     }
