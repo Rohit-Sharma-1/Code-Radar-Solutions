@@ -14,7 +14,6 @@ int main() {
         }
         printf("*\n");
     }
-    printf("\n");
     for(int i=1; i<=n; i++){
         printf("*");
     }
