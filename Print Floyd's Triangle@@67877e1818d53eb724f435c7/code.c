@@ -10,7 +10,5 @@ int main() {
             count++;
         }
     }
-
-    printf("%s", welcome());
     return 0;
 }
