@@ -6,9 +6,11 @@ int main() {
     for(int i=0; i<=pos; i++){
         int swap1 = arr[i];
         int swap2 = arr[size-i];
-        swap1 = arr[size-i];
-        swap2 = arr[i];
+        arr[i] = swap2;
+        arr[size-i] = swap1;
     }
-    printf("%d",arr);
+    for(int i=0; i<=size; i++){
+        printf("%d\n",arr[i]);
+    }
     return 0;
 }
