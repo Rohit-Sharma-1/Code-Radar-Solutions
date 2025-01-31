@@ -4,7 +4,7 @@ int sort( int arr[],int size){
         if(arr[i-1]<arr[i]){
             return 1;
         }else if(arr[i-1]>arr[i]){
-            return 1;
+            return 0;
         }
         else{
             return 0;
