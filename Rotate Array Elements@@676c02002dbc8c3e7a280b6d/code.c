@@ -6,15 +6,17 @@ int main() {
     for(int i=0; i<size; i++){
         scanf("%d",&arr[i]);
     }
-    scanf("%d",&pos);
+    scanf("%d",pos);
+    int rotarr[size];
     for(int i=0; i<pos; i++){
-        int swap1 = arr[i];
-        int swap2 = arr[size-i-1];
-        arr[i] = swap2;
-        arr[size-i-1] = swap1;
+        rotarr[i] = arr[size-pos+i];
+    }
+    for(int i=0; i<size-pos; i++){
+        temp[pos+i] = rotarr[i];
     }
     for(int i=0; i<size; i++){
-        printf("%d\n",arr[i]);
+        printf("%d",rotarr[i]);
     }
+    
     return 0;
 }
