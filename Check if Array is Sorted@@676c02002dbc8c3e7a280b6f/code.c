@@ -4,8 +4,10 @@ int sort(int arr[],int size){
         if(arr[i-1]>arr[i]){
             return 1;
     }
+}
     return 0;
 }
+
 int main() {
     int size;
     scanf("%d",&size);
