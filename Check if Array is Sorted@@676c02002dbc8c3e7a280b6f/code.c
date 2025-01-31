@@ -2,10 +2,10 @@
 int sort(int arr[],int size){
     for(int i=1; i<size; i++){
         if(arr[i-1]>arr[i]){
-            return 1;
+            return 0;
     }
 }
-    return 0;
+    return 1;
 }
 
 int main() {
@@ -16,9 +16,9 @@ int main() {
         scanf("%d",&arr[i]);
     }
     if(sort(arr,size)){
-        printf("Not Sorted\n");
-    }else{
         printf("Sorted\n");
+    }else{
+        printf("Not Sorted\n");
     }
     return 0;
 }
