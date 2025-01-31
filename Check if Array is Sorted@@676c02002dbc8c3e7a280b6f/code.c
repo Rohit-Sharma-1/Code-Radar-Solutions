@@ -1,5 +1,5 @@
 #include <stdio.h>
-int sort( int arr[],int size){
+int sort(int arr[],int size){
     for(int i=1; i<size; i++){
         if(arr[i-1]>arr[i]){
             return 1;
@@ -13,10 +13,10 @@ int main() {
     for(int i=0; i<size; i++){
         scanf("%d",&arr[i]);
     }
-    if(sort(arr, size)){
-        printf(" Not Sorted");
+    if(sort(arr,size)){
+        printf("Not Sorted\n");
     }else{
-        printf("Sorted");
+        printf("Sorted\n");
     }
     return 0;
 }
