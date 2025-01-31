@@ -3,9 +3,10 @@ int sort(int arr[],int size){
     for(int i=1; i<size; i++){
         if(arr[i-1]>arr[i]){
             return 0;
-    }
-}
-    return 1;
+            }
+        }else{
+            return 1;
+        }
 }
 
 int main() {
