@@ -15,7 +15,7 @@ int main() {
         temp[pos+i] = rotarr[i];
     }
     for(int i=0; i<size; i++){
-        printf("%d",rotarr[i]);
+        printf("%d\n",rotarr[i]);
     }
     
     return 0;
