@@ -8,6 +8,7 @@ int main() {
         scanf("%d",&arr[i]);
     }
     scanf("%d",&pos);
+    pos = pos%size;
     int rotarr[size];
     for(int i=0; i<pos; i++){
         rotarr[i] = arr[size-pos+i];
