@@ -12,7 +12,7 @@ int main() {
         rotarr[i] = arr[size-pos+i];
     }
     for(int i=0; i<size-pos; i++){
-        temp[pos+i] = rotarr[i];
+        rotarr[pos+i] = arr[i];
     }
     for(int i=0; i<size; i++){
         printf("%d\n",rotarr[i]);
