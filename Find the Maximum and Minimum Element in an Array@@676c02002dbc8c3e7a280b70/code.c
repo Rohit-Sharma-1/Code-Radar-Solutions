@@ -10,7 +10,7 @@ int main() {
     int arr2 = qsort(arr);
     for(int i=0; i<n; i++){
         if(i==0 || i==n-1){
-            printf("%d",arr[i]);
+            printf("%d",arr2[i]);
         }
 
     }
