@@ -5,7 +5,7 @@ int main() {
     scanf("%d",&size);
     int arr[size];
     for(int i=0; i<size; i++){
-        scanf("%d ",&arr[i]);
+        scanf("%d", &arr[i]);
     }
     int ceven=0, codd=0;
     for(int i=0; i<size; i++){
@@ -15,6 +15,6 @@ int main() {
             codd+=1;
         }
     }
-    print("%d %d",ceven, codd);
+    printf("%d %d",ceven, codd);
     return 0;
 }
