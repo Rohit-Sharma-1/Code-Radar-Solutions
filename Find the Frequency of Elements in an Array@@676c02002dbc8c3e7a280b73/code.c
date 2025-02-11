@@ -14,7 +14,7 @@ int main(){
             if(arr[i]==arr2[j]){
                 count+=1;
             }else{
-                arr2[j]=arr[i];
+                arr2[i]=arr[i];
             }
         }
     }
