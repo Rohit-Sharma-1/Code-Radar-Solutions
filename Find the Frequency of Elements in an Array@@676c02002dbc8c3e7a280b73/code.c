@@ -19,6 +19,6 @@ int main(){
         }
     }
     for(int i=1; i<=n; i++){
-        printf("%d %d",arr[i],count);
+        printf("%d %d\n",arr[i],count);
     }
 }
