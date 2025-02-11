@@ -11,10 +11,10 @@ int main(){
     int arr2[n], count=0;
     for(int i=1; i<=n; i++){
         for(int j=1; j<=n; j++){
-            if(arr[i]==arr2[j]){
-                count+=1;
+            if(!(arr[i]==arr2[j])){
+                arr2[j]=arr[i];
             }else{
-                arr2[i]=arr[i];
+                count+=1;
             }
         }
     }
