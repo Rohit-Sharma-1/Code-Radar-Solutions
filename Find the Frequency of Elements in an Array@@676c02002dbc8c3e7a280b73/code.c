@@ -12,9 +12,9 @@ int main(){
     for(int i=1; i<=n; i++){
         for(int j=1; j<=n; j++){
             if(!(arr[i]==arr2[j])){
-                arr2[j]=arr[i];
+                arr2[i]=arr[i];
             }else{
-                count[j]+=1;
+                count[i]+=1;
             }
         }
     }
