@@ -20,7 +20,7 @@ int main(){
         printf("%d",-1);
     }
     else{
-        if(1){
+        while(1){
             int res;
             for(int i=0;i<n; i++){
                 if(arr[i]==arr[i+1]){
