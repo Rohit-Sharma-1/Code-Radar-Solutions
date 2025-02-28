@@ -20,6 +20,17 @@ int main(){
         printf("%d",-1);
     }
     else{
-        printf("%d",arr[n-2]);
+        if(1){
+            int res;
+            for(int i=0;i<n; i++){
+                if(arr[i]==arr[i+1]){
+                    res = -1;
+                }
+            }
+            printf("%d",res);
+        }else{
+            printf("%d",arr[n-2]);
+        }
+        
     }
 }
