@@ -16,11 +16,6 @@ int main(){
             }
         }
     }
-    for(int i=0; i<n; i++){
-        if(arr[i]==arr[i+1]){
-            printf("-1");
-        }
-    }
     if(n<=2){
         printf("%d",arr[n-1]);
     }
