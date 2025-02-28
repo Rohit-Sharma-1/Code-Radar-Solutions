@@ -16,7 +16,9 @@ int main(){
             }
         }
     }
-    if(n<=2){
+    if(n<=1){
+        printf("%d",arr[n]);
+    }else if(n==2){
         printf("%d",arr[n-1]);
     }
     else{
