@@ -15,9 +15,9 @@ int main(){
                 arr[j] = temp;
             }
             
+            
         }
     }
-    return -1;
 
     printf("%d",arr[n-2]);
 }
