@@ -14,10 +14,17 @@ int main(){
                 arr[j+1] = arr[j];
                 arr[j] = temp;
             }
-            
-            
         }
     }
-
-    printf("%d",arr[n-2]);
+    for(int i=0; i<n; i++){
+        if(arr[i]==arr[i+1]){
+            printf("-1");
+        }
+    }
+    if(n<=2){
+        printf("%d",arr[n-1]);
+    }
+    else{
+        printf("%d",arr[n-2]);
+    }
 }
