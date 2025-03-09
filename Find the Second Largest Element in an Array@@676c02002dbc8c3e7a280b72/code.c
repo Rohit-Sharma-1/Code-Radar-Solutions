@@ -19,18 +19,19 @@ int main(){
     if(n<=1){
         printf("%d",-1);
     }
-    else{
-        
-        int res;
-        for(int i=0;i<n-2; i++){
-            if(arr[i]==arr[i+1]){
-                res = -1;
-            }
-            else{
-                res = arr[n-2];
-            }
+    int largest = arr[n - 1];
+    int secondLargest = -1;
+    
+    // Iterate from the second to last element to find the second largest
+    for (int i = n - 2; i >= 0; i--) {
+        if (arr[i] != largest) {
+            secondLargest = arr[i];
+            break;
         }
-        printf("%d",res);
-        
+    }
+    if (secondLargest == -1) {
+        printf("-1");
+    } else {
+        printf("%d", secondLargest);
     }
 }
