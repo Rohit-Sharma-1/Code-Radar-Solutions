@@ -2,6 +2,11 @@
 int main(){
     int n;
     scanf("%d", &n);
+
+    if(n<=1){
+        printf("%d",-1);
+    }
+    
     int arr[n];
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
@@ -16,9 +21,7 @@ int main(){
             }
         }
     }
-    if(n<=1){
-        printf("%d",-1);
-    }
+
     int largest = arr[n - 1];
     int secondLargest = -1;
     
