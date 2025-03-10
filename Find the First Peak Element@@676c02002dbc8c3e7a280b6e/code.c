@@ -10,7 +10,7 @@ int main() {
     for(int i=1; i<=n; i++){
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
             res = arr[i];
-            printf("%d",res);
+            printf("%d",arr[i]);
             break;
         }
     }
