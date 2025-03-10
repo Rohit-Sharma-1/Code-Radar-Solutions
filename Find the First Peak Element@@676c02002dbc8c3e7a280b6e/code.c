@@ -15,9 +15,9 @@ int main() {
     }
 
     if (arr[0] > arr[1]) {
-        printf("%d\n", arr[0]); // First element is peak
+        printf("%d\n", arr[0]);
     } else if (arr[n-1] > arr[n-2]) {
-        printf("%d\n", arr[n-1]); // Last element is peak
+        printf("%d\n", arr[n-1]);
     } else {
         printf("-1");
     }
