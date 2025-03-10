@@ -15,5 +15,13 @@ int main() {
             printf("-1");
         }
     }
+
+    if (arr[0] > arr[1]) {
+        printf("Peak element is: %d\n", arr[0]); // First element is peak
+    } else if (arr[n-1] > arr[n-2]) {
+        printf("Peak element is: %d\n", arr[n-1]); // Last element is peak
+    } else {
+        printf("-1");
+    }
     return 0;
 }
