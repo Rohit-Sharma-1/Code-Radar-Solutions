@@ -32,9 +32,9 @@ int main() {
     }
 
     if (count > n / 2) {
-        printf(" %d\n", candidate); // Print the majority element
+        printf("%d ", candidate); // Print the majority element
     } else {
-        printf("-1\n"); // If no majority element exists
+        printf("-1 "); // If no majority element exists
     }
 
     return 0;
