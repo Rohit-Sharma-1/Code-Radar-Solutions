@@ -2,31 +2,40 @@
 
 int main() {
     int n;
-    scanf("%d", &n);
+    scanf("%d", &n); // Input size of the array
 
     int arr[n];
     for (int i = 0; i < n; i++) {
-        scanf("%d", &arr[i]);
+        scanf("%d", &arr[i]); // Input elements of the array
     }
 
-    int count = 0;
-    int nums[n]; // This array will store unique elements
-    int isUnique; // Flag to check uniqueness of the current element
+    int candidate = -1, count = 0;
 
+    // Phase 1: Find the candidate for majority element
     for (int i = 0; i < n; i++) {
-        isUnique = 1;
-        for (int j = 0; j < count; j++) {
-            if (arr[i] == nums[j]) {
-                isUnique = 0; // Element is not unique
-                break;
-            }
+        if (count == 0) {
+            candidate = arr[i]; // Set the new candidate
         }
-        if (isUnique) {
-            nums[count] = arr[i]; // Store the unique element
-            count++; // Increment the count of unique elements
+        if (arr[i] == candidate) {
+            count++; // Increment the count if the element matches the candidate
+        } else {
+            count--; // Decrement the count if the element doesn't match
         }
     }
 
-    printf("Number of distinct elements: %d\n", count);
+    // Phase 2: Verify if the candidate is the majority element
+    count = 0;
+    for (int i = 0; i < n; i++) {
+        if (arr[i] == candidate) {
+            count++; // Count occurrences of the candidate
+        }
+    }
+
+    if (count > n / 2) {
+        printf(" %d\n", candidate); // Print the majority element
+    } else {
+        printf("-1\n"); // If no majority element exists
+    }
+
     return 0;
 }
