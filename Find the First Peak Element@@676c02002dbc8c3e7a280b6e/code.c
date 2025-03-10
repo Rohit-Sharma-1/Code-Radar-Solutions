@@ -11,10 +11,10 @@ int main() {
         if(arr[i]>arr[i-1] && arr[i]>arr[i+1]){
             res = arr[i];
             break;
-        }else{
-            res = arr[n];
         }
     }
+
     printf("%d",res);
+    
     return 0;
 }
