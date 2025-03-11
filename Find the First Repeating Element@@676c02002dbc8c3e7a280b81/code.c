@@ -12,11 +12,11 @@ int main(){
     int temp[n];
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
-            if(arr[j]==temp[i]){
-                printf("%d",arr[j]);
+            if(arr[i]==temp[j]){
+                printf("%d",arr[i]);
                 return 0;
             }else{
-                temp[i] = arr[j];
+                temp[j] = arr[i];
             }
         }
     }
