@@ -9,9 +9,11 @@ int main(){
     int count = 0;
     int isPrime = 1;
     for(int i=2; i<n; i++){
-        if(arr[i]%i==0){
+        for(int j=0; j<n; j++){
+            if(arr[i]%j==0){
             isPrime = 0;
             count++;
+        }
         }
     }
     printf("%d",count);
