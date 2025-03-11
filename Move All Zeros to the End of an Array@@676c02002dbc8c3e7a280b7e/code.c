@@ -6,19 +6,18 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-
+    int count = 0;
     for(int i=0; i<n; i++){
-        for(int j=0; j<n; j++){
-            if(arr[j]>arr[j+1]){
-                int temp;
-                temp = arr[j+1];
-                arr[j+1] = arr[j];
-                arr[j] = temp;
-            }
+        if(arr[i]==0){
+            int temp;
+            temp == arr[i];
+            count++;
         }
     }
-    for(int i=n-1; i>=0; i--){
-        printf("%d ",arr[i]);
+    for(int i=0; i<count; i++){
+        arr[n-count] = 0;
     }
-        
+    for(int i=0; i<n; i++){
+        printf("%d",arr[i]);
+    }
 }
