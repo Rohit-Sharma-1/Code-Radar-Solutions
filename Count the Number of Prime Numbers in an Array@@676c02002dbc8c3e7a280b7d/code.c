@@ -9,12 +9,12 @@ int main(){
     int count = 0;
     int isPrime = 1;
     for(int i=2; i<n; i++){
-        for(int j=0; j<n; j++){
+        for(int j=2; j<n; j++){
             if(arr[i]%j==0){
             isPrime = 0;
             count++;
         }
         }
     }
-    printf("%d",count);
+    printf("%d",n-count);
 }
