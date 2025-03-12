@@ -8,11 +8,13 @@ int main(){
     }
     int temp[n];
     for(int i=0; i<n; i++){
-        if(arr[i]==temp[i]){
+        for(int j=0; j<n; j++){
+            if(arr[i]==temp[j]){
             printf("%d",arr[i]);
             break;
-        }else{
-            temp[i] = arr[i];
+            }else{
+                temp[i] = arr[i];
+            }
         }
     }
     return 0;
