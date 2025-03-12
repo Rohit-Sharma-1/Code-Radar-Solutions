@@ -12,10 +12,9 @@ int main(){
             if(arr[i]==temp[j]){
                 printf("%d",arr[i]);
                 return 0;
-            }else{
-                temp[i] = arr[i];
             }
         }
+        temp[i] = arr[i];
     }
     return 0;
 }
