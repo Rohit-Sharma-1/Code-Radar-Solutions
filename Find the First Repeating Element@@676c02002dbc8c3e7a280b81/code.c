@@ -19,4 +19,5 @@ int main(){
         }
         temp[i] = arr[i];
     }
+    printf("-1");
 }
