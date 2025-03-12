@@ -11,7 +11,7 @@ int main(){
         for(int j=0; j<n; j++){
             if(arr[i]==temp[j]){
                 printf("%d",arr[i]);
-                break;
+                return 0;
             }else{
                 temp[i] = arr[i];
             }
