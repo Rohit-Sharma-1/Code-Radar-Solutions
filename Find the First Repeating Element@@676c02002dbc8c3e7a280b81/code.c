@@ -8,6 +8,7 @@ int main(){
     }
     if(n<2){
         printf("-1");
+        return 0;
     }
     int temp[n];
     for(int i=0; i<n; i++){
