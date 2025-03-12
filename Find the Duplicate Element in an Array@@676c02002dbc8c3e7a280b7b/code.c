@@ -10,8 +10,8 @@ int main(){
     for(int i=0; i<n; i++){
         for(int j=0; j<n; j++){
             if(arr[i]==temp[j]){
-            printf("%d",arr[i]);
-            break;
+                printf("%d",arr[i]);
+                break;
             }else{
                 temp[i] = arr[i];
             }
