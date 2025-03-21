@@ -7,8 +7,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     printf("%d",arr[0]);
+    int sum = 0;
     for(int i=0; i<=i+1; i++){
-        int sum += i;
+        sum += i;
         printf("%d",sum);
     }
 }
