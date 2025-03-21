@@ -9,6 +9,6 @@ int main(){
     int sum = 0;
     for(int i=0; i<n; i++){
         sum += arr[i];
-        printf("%d",sum);
+        printf("%d ",sum);
     }
 }
