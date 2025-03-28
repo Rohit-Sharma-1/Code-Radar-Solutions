@@ -6,7 +6,11 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    int sLargets = -1;
+    if(n==1){
+        printf("-1");
+        return 0;
+    }
+    int sLargest = -1;
     for(int i=0; i<n; i++){
         for(int j=0; j<n-i-1; j++){
             if(arr[j] < arr[j+1]){
@@ -19,12 +23,10 @@ int main(){
     }
     for(int i=0; i<n; i++){
         if(arr[i] != arr[0]){
-            printf("%d",arr[i]);
+            sLargest = arr[i];
             break;
         }
     }
-    
-
-
+    printf("%d",sLargest);
     return 0;
 }
