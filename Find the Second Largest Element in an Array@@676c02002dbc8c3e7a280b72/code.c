@@ -10,10 +10,10 @@ int main(){
         printf("-1");
         return 0;
     }
-
+    int Sl = -1;
         for(int i=0; i<n; i++){
         for(int j=0; j<n-i-1; j++){
-            if(arr[j] > arr[j+1]){
+            if(arr[j] < arr[j+1]){
                 int temp;
                 temp = arr[j];
                 arr[j] = arr[j+1];
@@ -23,10 +23,11 @@ int main(){
     }
     
     for(int i=0; i<n-1; i++){
-        if(arr[i]==arr[i+1]){
-            printf("-1");
-            return 0;
+        if(arr[i] != arr[0]){
+            Sl = arr[i];
+            break;
         }
     }
-    printf("%d",arr[n-2]);
+    printf("%d",Sl);
+    
 }
