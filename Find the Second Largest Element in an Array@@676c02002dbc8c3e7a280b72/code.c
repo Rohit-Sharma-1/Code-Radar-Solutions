@@ -10,7 +10,6 @@ int main(){
         printf("-1");
         return 0;
     }
-    int sorted=0;
 
         for(int i=0; i<n; i++){
         for(int j=0; j<n-i-1; j++){
@@ -19,14 +18,15 @@ int main(){
                 temp = arr[j];
                 arr[j] = arr[j+1];
                 arr[j+1] = temp;
-                sorted+=1;
             }
         }
     }
     
-    if(sorted){
-        printf("%d",arr[n-2]);
-        return 0;
+    for(int i=0; i<n-1; i++){
+        if(arr[i]==arr[i+1]){
+            printf("-1");
+            return 0;
+        }
     }
-    printf("-1");
+    printf("%d",arr[n-2]);
 }
