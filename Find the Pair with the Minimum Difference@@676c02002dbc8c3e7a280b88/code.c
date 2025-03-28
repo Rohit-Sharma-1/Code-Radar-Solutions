@@ -5,7 +5,7 @@ int main(){
     scanf("%d",n);
     int arr[n];
     for(int i=0;i<n;i++){
-        sacnf("%d",&arr[i]);
+        scanf("%d",&arr[i]);
     }
     int maxdiff=INT_MAX;
     for(int i=0;i<n;i++){
