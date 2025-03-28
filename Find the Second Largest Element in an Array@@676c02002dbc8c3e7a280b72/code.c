@@ -10,10 +10,10 @@ int main(){
         printf("-1");
         return 0;
     }
-    int sLargest ;
-    for(int i=0; i<n; i++){
+
+        for(int i=0; i<n; i++){
         for(int j=0; j<n-i-1; j++){
-            if(arr[j] < arr[j+1]){
+            if(arr[j] > arr[j+1]){
                 int temp;
                 temp = arr[j];
                 arr[j] = arr[j+1];
@@ -21,12 +21,6 @@ int main(){
             }
         }
     }
-    for(int i=0; i<n; i++){
-        if(arr[i] != arr[0]){
-            sLargest = arr[i];
-            break;
-        }
-    }
-    printf("%d",sLargest);
+    printf("%d",arr[n-2]);
     return 0;
 }
