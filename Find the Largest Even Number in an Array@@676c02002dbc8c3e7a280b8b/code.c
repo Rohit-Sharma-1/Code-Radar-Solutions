@@ -18,8 +18,8 @@ int main(){
     }
     for(int i=0; i<n; i++){
         if(arr[i]%2==0){
-            evenArr += arr[i];
+            evenArr = arr[i];
         }
     }
-    printf("%d",evenArr[])
+    printf("%d",evenArr[0]);
 }
