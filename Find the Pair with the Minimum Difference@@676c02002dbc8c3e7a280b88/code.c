@@ -14,6 +14,7 @@ int main(){
             if(arr[i]-arr[j]<maxdiff){
                 diff=arr[i]-arr[j];
                 printf("%d %d",arr[i],arr[j]);
+                return 0;
             }
         }
 
