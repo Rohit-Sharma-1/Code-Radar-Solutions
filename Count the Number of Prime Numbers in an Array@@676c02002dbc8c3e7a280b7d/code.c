@@ -7,14 +7,10 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count = 0;
-    int isPrime = 1;
-    for(int i=2; i<n; i++){
-        for(int j=2; j<n; j++){
-            if(arr[i]%j==0){
-            isPrime = 0;
+    for(int i=0; i<n; i++){
+        if(arr[i] % (i+2) != 0){
             count++;
         }
-        }
     }
-    printf("%d",n-count);
+    printf("%d",count);
 }
