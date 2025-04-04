@@ -1,8 +1,8 @@
 #include<stdio.h>
-int main(int n){
-    int sum;
-    sum = n%10 + n/10;
-    return sum;
+int sum(int n){
+    int sumy;
+    sumy = n%10 + n/10;
+    return sumy;
 }
 int main(){
     int n;
