@@ -1,4 +1,3 @@
-// Your code here...
 #include <stdio.h>
 
 int main(){
@@ -12,7 +11,7 @@ int main(){
     for(int i=0; i<n; i++){
         freq[i] = -1;
     }
-
+    int count = 1;
     for(int i=1; i<=n; i++){
         if(freq[i]==0){
             continue;
