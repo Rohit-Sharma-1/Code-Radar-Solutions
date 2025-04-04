@@ -8,17 +8,24 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    int arr2[n], count[n];
+    int freq[n];
+    for(int i=0; i<n; i++){
+        freq[i] = -1;
+    }
+
     for(int i=1; i<=n; i++){
-        for(int j=1; j<=n; j++){
-            if((arr[i]!=arr2[j])){
-                arr2[i]=arr[i];
-            }else{
-                count[i]+=1;
+        if(freq[i]==0){
+            continue;
+        }
+        for(int j=i+1; j<=n; j++){
+            if(arr[i] == arr[j]){
+                count++;
+                freq[j] = 0;
             }
         }
+        freq[i] = count;
     }
-    for(int i=1; i<=n; i++){
-        printf("%d %d\n",arr2[i],count[i]);
+    for(int i=0; i<n; i++){
+        printf("%d %d",arr[i],freq[i]);
     }
 }
