@@ -1,6 +1,6 @@
 #include<stdio.h>
 int sum(int n){
-    int sumy;
+    int sumy = 0;
     while(n>0){
         sumy += n%10;
         n = n/10;
