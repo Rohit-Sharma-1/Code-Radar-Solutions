@@ -8,6 +8,9 @@ int main(){
     }
     int freq[n];
     for(int i=0; i<n; i++){
+        freq[i] = -1;
+    }
+    for(int i=0; i<n; i++){
         int count = 1;
         if(freq[i]==0){
             continue;
