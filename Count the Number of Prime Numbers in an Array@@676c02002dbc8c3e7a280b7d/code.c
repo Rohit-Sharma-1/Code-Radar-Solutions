@@ -7,11 +7,9 @@ int main(){
         scanf("%d",&arr[i]);
     }
     int count = 0;
-    for(int i=0; i<n; i++){
-        for(int j=2; j<arr[j]; j++){
-            if(arr[j] % j != 0){
-                count++;
-            }
+    for(int i=0; (i*i)<=n; i++){
+        if(arr[i] % i != 0){
+            count++;
         }
     }
     printf("%d",count);
