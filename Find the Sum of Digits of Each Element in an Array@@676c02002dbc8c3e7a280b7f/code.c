@@ -2,7 +2,8 @@
 int sum(int n){
     int sumy;
     while(n>0){
-        sumy = n%10 + n/10;
+        sumy += n%10
+        n /= 10;
     }
     return sumy;
 }
