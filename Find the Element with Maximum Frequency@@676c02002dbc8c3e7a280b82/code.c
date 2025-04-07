@@ -24,8 +24,10 @@ int main(){
         freq[i] = count;
     }
     int cand;
+    int maxfreq;
     for(int i=1; i<n; i++){
-        if(freq[i-1]>freq[i]){
+        if(freq[i]>maxfreq){
+            maxfreq = freq[i];
             cand = i;
         }
     }
