@@ -6,16 +6,15 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    int carr[n];
+    int cand;
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
             if(arr[i]>arr[j]){
-                carr[i] += arr[i];
+                cand += arr[i];
             }
         }
     }
-    for(int i=0; i<n; i++){
-        printf("%d",carr[i]);
-    }
+    printf("%d",cand);
+
     printf("%d",arr[n-1]);
 }
