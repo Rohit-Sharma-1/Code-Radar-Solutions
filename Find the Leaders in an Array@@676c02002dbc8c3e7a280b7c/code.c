@@ -14,6 +14,6 @@ int main(){
             }
         }
     }
-    printf("%d",cand);
+    printf("%d ",cand);
     printf("%d",arr[n-1]);
 }
