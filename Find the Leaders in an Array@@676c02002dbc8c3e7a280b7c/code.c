@@ -6,13 +6,16 @@ int main(){
     for(int i=0; i<n; i++){
         scanf("%d",&arr[i]);
     }
-    int candidate[n];
+    int carr[n];
     for(int i=0; i<n; i++){
         for(int j=i+1; j<n; j++){
             if(arr[i]>arr[j]){
-                candidate[i] += arr[i];
+                carr[i] += arr[i];
             }
         }
     }
-    printf("%d",candidate);
+    for(int i=0; i<n; i++){
+        printf("%d",carr[i]);
+    }
+    printf("%d",arr[n-1]);
 }
