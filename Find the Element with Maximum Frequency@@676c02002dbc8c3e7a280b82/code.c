@@ -25,11 +25,11 @@ int main(){
     }
     int cand;
     int maxfreq;
-    for(int i=1; i<n; i++){
-        if(freq[i]>maxfreq){
+    for(int i=0; i<n; i++){
+        if(freq[i] > maxfreq){
             maxfreq = freq[i];
-            cand = i;
+            cand = arr[i];
         }
     }
-    printf("%d",arr[cand]);
+    printf("%d",cand);
 }
