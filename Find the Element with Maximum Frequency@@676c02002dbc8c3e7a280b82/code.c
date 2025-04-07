@@ -24,7 +24,7 @@ int main(){
         freq[i] = count;
     }
     int cand;
-    for(int i=1; i<=n; i++){
+    for(int i=1; i<n; i++){
         if(freq[i-1]>freq[i]){
             cand = i;
         }
