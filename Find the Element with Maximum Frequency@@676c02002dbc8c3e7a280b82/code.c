@@ -18,7 +18,7 @@ int main(){
         for(int j=0; j<n; j++){
             if(arr[i]==arr[j]){
                 count++;
-                freq[i] = 0;
+                freq[j] = 0;
             }
         }
         freq[i] = count;
