@@ -15,10 +15,12 @@ int main(){
         str2[j] = str[i];
         // printf("%c",str2[j]);
     }
-    if(str==str2){
+    for(int i=0; str[i]!='\0'; i++){
+        if(str==str2){
         printf("Yes");
-    }else{
-        printf("No");
+        }else{
+            printf("No");
+        }
     }
     
 
