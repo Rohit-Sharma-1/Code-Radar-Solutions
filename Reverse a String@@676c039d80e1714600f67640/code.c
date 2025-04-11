@@ -7,7 +7,7 @@ int main(){
     for(int i=0; str[i]!='\0'; i++){
         count++;
     }
-    for(int i=count; i>=0; i--){
+    for(int i=count-1; i>=0; i--){
         printf("%c",str[i]);
     }
 }
