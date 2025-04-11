@@ -16,8 +16,8 @@ int main(){
         // printf("%c",str2[j]);
     }
     for(int i=0; str[i]!='\0'; i++){
-        if(str==str2){
-        printf("Yes");
+        if(str[i]==str2[i]){
+            printf("Yes");
         }else{
             printf("No");
         }
