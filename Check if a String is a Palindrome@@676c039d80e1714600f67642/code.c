@@ -13,7 +13,7 @@ int main(){
     int j = 0;
     for(int i=count-1; i>=0; i--,j++){
         str2[j] = str[i];
-        printf("%s",str2);
+        printf("%s",str2[i]);
     }
     // if(str==str2){
     //     printf("Yes");
