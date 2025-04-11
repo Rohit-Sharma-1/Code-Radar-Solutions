@@ -6,7 +6,7 @@ int main(){
         scanf("%c",&str[i]);
         count++;
     }
-    for(int i=count; i>0; i++){
+    for(int i=count-1; i>=0; i++){
         printf("%c",str[i]);
     }
 }
