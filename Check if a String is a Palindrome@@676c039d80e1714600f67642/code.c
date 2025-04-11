@@ -10,8 +10,9 @@ int main(){
     for(int i=0; str[i]!='\0'; i++){
         count++;
     }
-    for(int i=count-1; i>=0; i--){
-        str2 = str[i];
+    int j = 0;
+    for(int i=count-1; i>=0; i--,j++){
+        str2[j] = str[i];
     }
     if(str==str2){
         printf("Yes");
