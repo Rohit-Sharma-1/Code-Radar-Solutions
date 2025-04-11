@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str1[100];
-    scanf("%s",&str);
+    scanf("%s",&str1);
     char str[50];
     str = tolower(str1);
     
