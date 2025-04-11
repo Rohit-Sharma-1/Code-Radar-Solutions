@@ -1,9 +1,9 @@
 #include<stdio.h>
 int main(){
-    char str;
+    char str[50];
     scanf("%s",&str);
 
     for(int i=0; i<'\0'; i++){
-        printf("%c",str);
+        printf("%c",str[i]);
     }
 }
