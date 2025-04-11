@@ -1,9 +1,10 @@
 #include<stdio.h>
 #include<string.h>
 int main(){
-    char str[100];
+    char str1[100];
     scanf("%s",&str);
-    tolower(str);
+    char str[50];
+    str = tolower(str1);
     
     int count = 0;
 
