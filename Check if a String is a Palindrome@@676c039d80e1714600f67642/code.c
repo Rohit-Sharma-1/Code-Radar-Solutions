@@ -2,7 +2,7 @@
 #include<string.h>
 int main(){
     char str[50];
-    scanf("%s",&str1);
+    scanf("%s",&str);
     char str2[50];
 
     count = 0;
