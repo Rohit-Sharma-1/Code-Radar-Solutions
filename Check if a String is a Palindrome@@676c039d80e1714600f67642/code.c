@@ -18,11 +18,11 @@ int main(){
     char value[50];
     for(int i=0; str[i]!='\0'; i++){
         if(str[i]==str2[i]){
-            value = "Yes";
+            value[i] = "Yes";
         }else{
             printf("No");
         }
     }
-    printf("%s",value);
+    printf("%s",value[0]);
 
 }
