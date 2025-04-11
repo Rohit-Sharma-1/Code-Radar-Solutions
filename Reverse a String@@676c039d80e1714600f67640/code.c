@@ -12,8 +12,8 @@ int main(){
     }
     count++;
     str[i] = '\0';
-    
-    for(int i=count-1; i>=0; i++){
+
+    for(int i=count; i>=0; i++){
         printf("%c",str[i]);
     }
 }
