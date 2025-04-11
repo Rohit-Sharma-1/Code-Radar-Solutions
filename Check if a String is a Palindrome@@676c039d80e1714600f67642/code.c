@@ -5,7 +5,7 @@ int main(){
     scanf("%s",&str);
     char str2[50];
 
-    count = 0;
+    int count = 0;
 
     for(int i=0; str[i]!='\0'; i++){
         count++;
