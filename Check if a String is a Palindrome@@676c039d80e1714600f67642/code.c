@@ -15,14 +15,14 @@ int main(){
         str2[j] = str[i];
         // printf("%c",str2[j]);
     }
-    char value[50];
     for(int i=0; str[i]!='\0'; i++){
-        if(str[i]==str2[i]){
-            value[i] = "Yes";
-        }else{
+        if(str[i]!=str2[i]){
             printf("No");
+            break;
+        }else{
+            printf("Yes");
         }
     }
-    printf("%s",value[0]);
+    
 
 }
