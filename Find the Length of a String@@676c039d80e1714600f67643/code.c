@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include<string.h>
 char str[50];
-scanf("%s",&str);
+fgets(str,50,stdin);
 int count = 0;
 for(int i=0; str[i]!='0'; i++){
     count++;
