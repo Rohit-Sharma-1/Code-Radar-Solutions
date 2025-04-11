@@ -21,6 +21,7 @@ int main(){
             break;
         }else{
             printf("Yes");
+            break;
         }
     }
     
