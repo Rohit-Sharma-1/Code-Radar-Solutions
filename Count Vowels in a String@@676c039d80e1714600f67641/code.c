@@ -10,7 +10,7 @@ int main(){
     for(int i=0; str[i]!='\0'; i++){
         char ch;
         ch = tolower(str[i]);
-        if(str[i]=='a'||str[i]=='e'||str[i]=='i'||str[i]=='o'||str[i]=='u'){
+        if(ch=='a'||ch=='e'||ch=='i'||ch=='o'||ch=='u'){
             count++;
         }
     }
