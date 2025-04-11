@@ -13,13 +13,13 @@ int main(){
     int j = 0;
     for(int i=count-1; i>=0; i--,j++){
         str2[j] = str[i];
-        printf("%c",str2[j]);
+        // printf("%c",str2[j]);
     }
-    // if(str==str2){
-    //     printf("Yes");
-    // }else{
-    //     printf("No");
-    // }
+    if(str==str2){
+        printf("Yes");
+    }else{
+        printf("No");
+    }
     
 
 }
